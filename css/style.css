@@ -1,0 +1,153 @@
+:root {
+    --switch-bg-url: url(../img/Off.svg);
+    --bg: #2C2B3D;
+    --button-color: #2F2E41;
+    --text-color: white;
+    --text-color-p: #C2C2C2; 
+    --hover: rgb(165, 165, 165);
+}
+
+
+.claro {
+    --switch-bg-url: url(../img/On.svg);
+    --bg: #504f70;
+    --button-color: #504f70;
+    --text-color: black;
+    --text-color-p: rgb(0, 0, 0);
+    --hover: rgb(165, 165, 165);
+}
+
+
+
+
+
+body {
+    font-family: "JetBrains Mono", monospace;
+    background: var(--bg);
+    
+    
+    
+    margin: 0;
+}
+
+
+
+h1 {
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 32px;
+    
+}
+
+#botao {
+    cursor: pointer;
+    border: 1px solid #00BFA6;
+    background: var(--button-color) var(--switch-bg-url) no-repeat center;
+    width: 50px;
+    height: 50px;
+  
+    border-radius: 50%;
+
+    position: relative;
+}
+
+
+
+ul li a:hover {
+    color: var(--hover) ;
+    text-shadow: 1px 1px 12px #00BFA6;
+
+}
+
+
+header { 
+    margin: 71px auto 101px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1083px;
+    height: 30px;
+    align-content: space-around;    
+}
+
+header ul  {
+    text-decoration: none;
+    gap: 64px;
+    list-style: none;
+    display: flex;
+}
+
+header ul a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 1092px;
+    height: 283px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+
+section p {
+    
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-color-p);
+    font-size: 16px;
+    width: 604px;
+    height: 168px;
+    line-height: 28px;
+}
+
+span {
+    font-weight: bold;
+    color: #00BFA6;
+}
+
+#cadeado {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
+
+#footer  {
+    width: 568px;
+    height: 55px;
+    display: flex;
+    margin: 157px auto 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--text-color);
+}
+
+
+
+
+#line {
+    width: 568px;
+    margin:  auto 27px ;
+    border: 1px solid #00BFA6;
+    
+
+}
+
+
+
+@media (min-width: 700px) {
+    :root {
+      --bg-color: black;
+    }
+  
+    .claro {
+      --bg-color: white;
+    }
+  }
